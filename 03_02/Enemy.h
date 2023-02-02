@@ -1,20 +1,19 @@
 #pragma once
 class Enemy
 {
-protected:
 public:
-
 	Enemy();
-
 	~Enemy();
 
-	static void EnemyNum();
+	bool IsAlive();
+	void SetDeath();
 
-	void entriy();
+	void Updata();
+	void Draw();
 
+public:
+	static bool isAllAlive;
 private:
-	static int Enemy_C;
-
-	int Enemy_ID;
+	bool isAlive;
 
 };

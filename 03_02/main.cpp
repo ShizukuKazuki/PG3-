@@ -1,22 +1,36 @@
 #include "Enemy.h"
-#include <iostream>
-
-using namespace std;
+#include <stdio.h>
 
 int main()
 {
-    Enemy* r1, * r2, * r3;
-    r1 = new Enemy();
-    r1->entriy();
-    Enemy::EnemyNum();
-    r2 = new Enemy();
-    r3 = new Enemy();
-    r2->entriy();
-    r3->entriy();
-    delete r1;
-    delete r2;
-    Enemy::EnemyNum();
-    delete r3;
-    Enemy::EnemyNum();
-    return 0;
+	Enemy enemy1;
+	Enemy enemy2;
+	Enemy enemy3;
+
+	enemy1.Draw();
+	enemy2.Draw();
+	enemy3.Draw();
+	printf("----\n");
+
+	enemy2.SetDeath();
+	printf("“Gˆê‘ÌŒ‚”j\n");
+
+	enemy1.Draw();
+	enemy2.Draw();
+	enemy3.Draw();
+	printf("----\n");
+
+	enemy1.Updata();
+	enemy2.Updata();
+	enemy3.Updata();
+	printf("----\n");
+	
+	
+
+	enemy1.Draw();
+	enemy2.Draw();
+	enemy3.Draw();
+	printf("----\n");
+
+	return 0;
 }

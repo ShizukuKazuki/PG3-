@@ -1,26 +1,36 @@
 #include "Enemy.h"
-#include <iostream>
+#include <stdio.h>
 
-using namespace std;
+bool Enemy::isAllAlive = false;
 
-int Enemy::Enemy_C = 0;
-
-Enemy::Enemy() : Enemy_ID(0)
+Enemy::Enemy()
 {
-	Enemy_ID = Enemy_C;
-	Enemy_C++;
+	isAlive = true;
+	isAllAlive = true;
 }
-
 Enemy::~Enemy()
 {
-	cout << "“G:" << Enemy_ID << "Œ‚”j" << endl;
-	Enemy_C--;
 }
-void Enemy::EnemyNum()
+bool Enemy::IsAlive()
 {
-	cout << "“G‚Ì”‚Í," << Enemy_C << "‘Ì" << endl;
+	return true;
 }
-void Enemy::entriy()
+void Enemy::SetDeath()
 {
-	cout << Enemy_ID << ":" << "“GoŒ»" << endl;
+	isAlive = isAlive;
+	isAllAlive = isAllAlive;
+}
+void Enemy::Updata()
+{
+	if (isAllAlive = false)
+	{
+		isAlive = false;
+	}
+}
+void Enemy::Draw()
+{
+	if (IsAlive())
+	{
+		printf("“GoŒ»\n");
+	}
 }
