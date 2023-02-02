@@ -20,11 +20,5 @@ int main()
 		delete p;
 	}
 
-	//Circle circle;
-	//Rectangle qube;
-	//circle.size();
-	//circle.draw();
-	//qube.size();
-	//qube.draw();
 	return 0;
 }
