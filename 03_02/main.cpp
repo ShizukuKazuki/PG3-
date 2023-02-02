@@ -10,7 +10,7 @@ int main()
 	enemy1.Draw();
 	enemy2.Draw();
 	enemy3.Draw();
-	printf("----\n");
+	printf("------\n");
 
 	enemy2.SetDeath();
 	printf("“Gˆê‘ÌŒ‚”j\n");
@@ -18,14 +18,16 @@ int main()
 	enemy1.Draw();
 	enemy2.Draw();
 	enemy3.Draw();
-	printf("----\n");
+	printf("------\n");
 
 	enemy1.Updata();
 	enemy2.Updata();
 	enemy3.Updata();
 	printf("----\n");
 	
-	
+	enemy1.SetDeath();
+	enemy3.SetDeath();
+	printf("----\n");sai 
 
 	enemy1.Draw();
 	enemy2.Draw();

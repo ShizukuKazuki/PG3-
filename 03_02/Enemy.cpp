@@ -13,12 +13,12 @@ Enemy::~Enemy()
 }
 bool Enemy::IsAlive()
 {
-	return true;
+	return isAlive;
 }
 void Enemy::SetDeath()
 {
-	isAlive = isAlive;
-	isAllAlive = isAllAlive;
+	isAlive = false;
+	isAllAlive = true;
 }
 void Enemy::Updata()
 {
@@ -33,4 +33,5 @@ void Enemy::Draw()
 	{
 		printf("ìGèoåª\n");
 	}
+	
 }
